@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://glenn:alswn4122!@boilerplate-cpkyn.mongodb.net/test?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://{userid}:{userpassword}@boilerplate-cpkyn.mongodb.net/test?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
